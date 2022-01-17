@@ -3,8 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Sunny/AndroidStudioProjects/Samarpan/app/src/main/res/drawable/facebook_icon.xml" value="0.2203125" />
+        <entry key="..\:/Users/Sunny/AndroidStudioProjects/Samarpan/app/src/main/res/drawable/google_icon.xml" value="0.2203125" />
+        <entry key="..\:/Users/Sunny/AndroidStudioProjects/Samarpan/app/src/main/res/drawable/google_logo.xml" value="0.2203125" />
+        <entry key="..\:/Users/Sunny/AndroidStudioProjects/Samarpan/app/src/main/res/drawable/login_button.xml" value="0.2203125" />
         <entry key="..\:/Users/Sunny/AndroidStudioProjects/Samarpan/app/src/main/res/drawable/splash_image.xml" value="0.33" />
-        <entry key="..\:/Users/Sunny/AndroidStudioProjects/Samarpan/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Sunny/AndroidStudioProjects/Samarpan/app/src/main/res/layout/activity_main.xml" value="0.25" />
       </map>
     </option>
   </component>
