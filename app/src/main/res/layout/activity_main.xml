@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/white"
+    android:background="@drawable/login_background"
     android:padding="20dp"
     tools:context=".MainActivity">
 
@@ -20,6 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/bungee"
+        android:layout_marginTop="10dp"
         android:text="Hello There, Welcome Back"
         android:textColor="@color/black"
         android:textSize="30sp" />
@@ -91,7 +92,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:text="Login"
             android:background="@drawable/login_button"
             android:elevation="35dp"
@@ -111,7 +112,6 @@
                 android:backgroundTint="@color/white"
                 android:elevation="35dp"
                 android:contentDescription="Login using google"
-                android:src="@drawable/google_logo"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/donor_facebook"
                 app:layout_constraintHorizontal_bias="0.705"
