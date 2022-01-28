@@ -34,3 +34,28 @@ The section provides with the proper documentation and ideas to be implemented i
 ## Issues
 Contributions, issues and feature requests are welcome!
 Feel free to check [issues page](https://github.com/1HazArd1/Samarpan/issues). You can also take a look at the **contributing guide**.
+
+
+
+
+## Maintainers ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="http:// https://github.com/1HazArd1"><img src="https://avatars.githubusercontent.com/u/77063438?v=4" width="100px;" alt=""/><br /><sub><b>Aakash Sinha</b></sub></a><br /><a href="" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Suswan114"><img src="https://avatars.githubusercontent.com/u/67154528?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Suswan Biswas</b></sub></a><br /><a href="" title="Code">💻</a></td>
+    <td align="center"><a href="http://github.com/dufftt"><img src="https://avatars.githubusercontent.com/u/40717687?v=4" width="100px;" alt=""/><br /><sub><b>Sourav Sharma</b></sub></a><br /><a href="" title="Code">💻</a></td>
+   
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
