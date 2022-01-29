@@ -4,23 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/login_background"
+    android:orientation="vertical"
     android:padding="20dp"
     tools:context=".MainActivity">
 
     <!--Image/logo here needed to be added-->
     <ImageView
         android:id="@+id/loginImage"
-        android:layout_width="100dp"
+        android:layout_width="wrap_content"
         android:layout_height="100dp"
         android:src="@drawable/ic_launcher_foreground" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/bungee"
         android:layout_marginTop="10dp"
+        android:fontFamily="@font/bungee"
         android:text="Hello There, Welcome Back"
         android:textColor="@color/black"
         android:textSize="30sp" />
@@ -44,7 +44,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:layout_marginBottom="20dp"
         android:orientation="vertical">
 
@@ -52,8 +52,8 @@
             android:id="@+id/donor_username"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
-            android:hint="Username"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:hint="Username">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -67,6 +67,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:hint="Password"
             app:passwordToggleEnabled="true">
 
@@ -82,22 +83,23 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
+            android:layout_margin="5dp"
             android:background="#00000000"
             android:elevation="0dp"
             android:fontFamily="monospace"
             android:text="Forgot Password?"
-            android:layout_margin="5dp"
             android:textAllCaps="false"
             android:textColor="@color/black" />
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:text="Login"
             android:background="@drawable/login_button"
             android:elevation="35dp"
-            android:textStyle="bold"
-            android:textSize="16sp"/>
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -110,8 +112,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:backgroundTint="@color/white"
-                android:elevation="35dp"
                 android:contentDescription="Login using google"
+                android:elevation="35dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/donor_facebook"
                 app:layout_constraintHorizontal_bias="0.705"
@@ -124,9 +126,9 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:backgroundTint="@color/white"
-                android:elevation="35dp"
                 android:contentDescription="Login using facebook"
-                android:src="@drawable/facebook_icon"
+                android:elevation="35dp"
+                android:src="@drawable/login_facebook"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -138,29 +140,29 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:backgroundTint="@color/white"
-                android:elevation="35dp"
                 android:contentDescription="Login using twitter"
+                android:elevation="35dp"
                 android:src="@drawable/twitter_icon"
-                app:layout_constraintHorizontal_bias="0.295"
                 app:layout_constraintBottom_toBottomOf="@+id/donor_google"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.295"
                 app:layout_constraintStart_toEndOf="@+id/donor_facebook"
                 app:layout_constraintTop_toTopOf="@+id/donor_google" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#00000000"
-                android:elevation="0dp"
-                android:fontFamily="monospace"
-                android:layout_gravity="right"
-                android:text="Sign up"
-                android:layout_margin="5dp"
-                android:textAllCaps="false"
-                android:textColor="@color/black" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"
+            android:background="#00000000"
+            android:elevation="0dp"
+            android:fontFamily="monospace"
+            android:text="Sign up"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
 
         <Button
             android:layout_width="wrap_content"
@@ -175,13 +177,13 @@
             android:textAllCaps="false"
             android:textColor="@color/black" />
 
-            <!--com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/white"
-                android:elevation="35dp"
-                android:layout_gravity="center"
-                /-->
+        <!--com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:elevation="35dp"
+            android:layout_gravity="center"
+            /-->
 
     </LinearLayout>
 </LinearLayout>
