@@ -8,7 +8,7 @@ Samarpan is a charity-based application that aims in bridging the gap between th
 As usual, you can get started by cloning the project to your local machine:
 
 ```bash
-  https://github.com/1HazArd1/Samarpan.git
+  https://github.com/Diversion2k22/Samarpan.git
 ```
     
 ## Tech Stack
