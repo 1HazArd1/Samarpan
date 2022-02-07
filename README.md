@@ -1,4 +1,5 @@
 # Samarpan
+
 ## About Samarpan
 Samarpan is a charity-based application that aims in bridging the gap between the philanthropic individuals who wish to bring a significant change in the society and the NGOs,uplifting and improving the lifestyle of the underprivilaged.
 ## Installation
@@ -25,29 +26,35 @@ The section provides with the proper documentation and ideas to be implemented i
 
 ### DONORS
 1) Login Page  
+
 2) Sign Up Page  
-	a) Donors  
-	b) NGOs  
+	* Donors  
+	* NGOs  
+	
 3) Elements inside the application  
-	a) Profile    
-  b) Elements for donations    
+	* Profile    
+  	* Elements for donations    
 	  &nbsp; &nbsp; i) Clothes and basic necessaties  
 	  &nbsp; &nbsp; ii) Money    
-    &nbsp; &nbsp; iii) Foods  
+   	  &nbsp; &nbsp; iii) Foods  
 	  &nbsp; &nbsp; iv) Stationery  
-	c) Second hand books trading  
-	d) Leaderboard/Podium  
-	e) Requirement Section  
-	d) About section of the registered NGOs  
+	* Second hand books trading  
+	* Leaderboard/Podium  
+	* Requirement Section  
+	* About section of the registered NGOs  
 ### NGOs
-1) Elements inside the application  
-  a) List of items donated by donors   
+1) Login Page  
+
+2) Three Sign Up Pages  
+
+3) Elements inside the application  
+     * List of items donated by donors   
 	  &nbsp; &nbsp; i) Clothes and basic necessaties   
 	  &nbsp; &nbsp; ii) Money  
-    &nbsp; &nbsp; iii) Foods  
+   	  &nbsp; &nbsp; iii) Foods  
 	  &nbsp; &nbsp; iv) Stationery(only the donated ones)  
-	b) Requirement Section  
-	c) Leaderboard/Podium     
+     * Requirement Section  
+     * Leaderboard/Podium     
     
 Check out the document for complete information about the [Ideas to be Implemented](https://docs.google.com/document/d/1jM_qZiC8mtyg2Ie9RheusLiPAMX-tqARf0kUsD8s7vY/edit?usp=sharing)
 
