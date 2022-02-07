@@ -25,4 +25,5 @@ class UserLoginFragment: Fragment() {
         }
         return itemView
     }
+    // thinking of keeping same login for both NGO and donors
 }
