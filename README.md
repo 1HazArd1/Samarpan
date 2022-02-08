@@ -13,7 +13,7 @@ As usual, you can get started by cloning the project to your local machine:
     
 ## Tech Stack
 
-Kotlin, XML, Firebase, MVVM, CameraX
+Kotlin, XML, Firebase, MVVM, CameraX, Node Js
 
 
 ## Documentation
