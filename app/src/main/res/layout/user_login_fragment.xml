@@ -7,7 +7,7 @@
     android:background="@drawable/login_background"
     android:layout_height="match_parent">
 
-    <!--Image/logo here needed to be added-->
+    <!--Logo of the application will be added here-->
     <ImageView
         android:id="@+id/loginImage"
         android:layout_width="wrap_content"
@@ -47,13 +47,13 @@
         android:orientation="vertical">
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/donor_username"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Username">
+            android:hint="Email">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/donor_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black" />
@@ -61,15 +61,15 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/donor_password"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:hint="Password"
-            app:passwordToggleContentDescription="true">
+            app:passwordToggleEnabled="true"
+            android:hint="Password">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/donor_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
@@ -90,6 +90,7 @@
             android:textColor="@color/black" />
 
         <Button
+            android:id="@+id/userLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/login_button"
@@ -150,29 +151,40 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-        <Button
-            android:id="@+id/userSignUp"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:layout_margin="5dp"
-            android:background="#00000000"
-            android:elevation="0dp"
-            android:fontFamily="monospace"
-            android:text="Sign up"
-            android:textAllCaps="false"
-            android:textColor="@color/black" />
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:fontFamily="monospace"
+                android:text="Don\'t have an account?"
+                />
+            <TextView
+                android:id="@+id/userSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="5dp"
+                android:fontFamily="monospace"
+                android:textColor="@color/black"
+                android:text="Register"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:layout_gravity="right"
-            android:layout_margin="5dp"
+            android:layout_marginTop="20dp"
             android:background="#00000000"
             android:elevation="0dp"
             android:fontFamily="monospace"
-            android:minHeight="48dp"
-            android:text="Login as NGO"
+            android:text="Register as NGO"
             android:textAllCaps="false"
             android:textColor="@color/black" />
 
