@@ -21,7 +21,8 @@ contributions from anyone willing to improve/add new implementations to this pro
  	a) Open up android studio  
 	b) Click get from version control  
 	c) Paste the link to clone the repo
-5) The repository is cloned in your local machine.
+5) The repository is cloned in your local machine.  
+![](https://github.com/Suswan114/Samarpan/blob/master/images/clone_screenshot.png)
 ### Instructions to follow while contributing to SAMARPAN
 Follow proper naming convention
 
@@ -60,7 +61,9 @@ Comment on any existing issue raised by maintainers or raise an issue
  2) Create a new branch inside android studio before working on any changes
     the branch created should have the following convention. 
     "your name/username""related work"
-     for eg"xyzUserRegistration"(Add the screenshot)
+     for eg"xyzUserRegistration"  
+     ![](https://github.com/Suswan114/Samarpan/blob/master/images/branch_screenshot_full.png)
+     ![](https://github.com/Suswan114/Samarpan/blob/master/images/branch_sreenshot.png)
  3) Perform the necessary changes or updation
  	a)Make sure anything you do is only related to what issue you are working on 
 	b)Ensure that your changes apply to all screensizes
@@ -72,7 +75,8 @@ Comment on any existing issue raised by maintainers or raise an issue
      git add .
  5) Commit all the changes.
 	a)The commit message should be relevant and short.(usually title of pull request) 
-	b)Make sure to condense your changes into a single commit(add the screenshot for commit button)
+	b)Make sure to condense your changes into a single commit  
+	![](https://github.com/Suswan114/Samarpan/blob/master/images/commit_screenshot.PNG)
  6) Push the committed changes in your feature branch to your remote repo.
 
 
