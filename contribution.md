@@ -44,7 +44,7 @@ Follow proper naming convention
 5) Defining Strings: All the elements inside the xml file under android:text="" should not be harcoded text. Define all the text inside strings.xml
 		     with proper naming convention:
 		     all the name inside a string elements should be like "type of view""what is the purpose of the view""which activty/fragment the view belongs to"  
-         for eg: <string name="et_email_userLogin">Email</string>
+         for eg: ```<string name="et_email_userLogin">Email</string>```
          
 ### Guidelines for raising a new issue
 Comment on any existing issue raised by maintainers or raise an issue
