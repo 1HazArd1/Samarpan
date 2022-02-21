@@ -19,7 +19,7 @@ Kotlin, XML, Firebase, MVVM, CameraX
 ## Documentation
 
 The section provides with the proper documentation and ideas to be implemented inside the application  
-[Documentation](https://docs.google.com/document/d/1MWGzi4aSHy0WVdcFUYnCEOj0bUHtMP3-KEUHuGplk2I/edit?usp=sharing)  
+[Documentation](https://docs.google.com/document/d/1oKrF6ThzTL4lW3s_yeCEzV8fNatjxAeOme1ON49wA3A/edit?usp=sharing)  
 
 
 ## Ideas to be implemented
@@ -56,7 +56,7 @@ The section provides with the proper documentation and ideas to be implemented i
      * Requirement Section  
      * Leaderboard/Podium     
     
-Check out the document for complete information about the [Ideas to be Implemented](https://docs.google.com/document/d/1jM_qZiC8mtyg2Ie9RheusLiPAMX-tqARf0kUsD8s7vY/edit?usp=sharing)
+Check out the document for complete information about the [Ideas to be Implemented](https://docs.google.com/document/d/1jM_qZiC8mtyg2Ie9RheusLiPAMX-tqARf0kUsD8s7vY/edit)
 
 ## Contributing
 
