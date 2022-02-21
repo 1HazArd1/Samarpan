@@ -8,7 +8,8 @@
 ## ⭐ About Samarpan
 **Samarpan is a charity-based application that aims in bridging the gap between the philanthropic individuals who wish to bring a significant change in the society and the NGOs,uplifting and improving the lifestyle of the underprivilaged.**
 
-## ⭐ Installation
+
+## 📃 Installation
 **Clone the Repository**
 
 As usual, you can get started by cloning the project to your local machine:
@@ -17,23 +18,27 @@ As usual, you can get started by cloning the project to your local machine:
   https://github.com/Diversion2k22/Samarpan.git
 ```
     
-## ⭐ Tech Stack 🧑‍💻
+## 🧑‍💻 Tech Stack
 ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
 ![Kotlin](https://img.shields.io/badge/kotlin-%230095D5.svg?style=for-the-badge&logo=kotlin&logoColor=white)
+
+✒️ MVVM
+✒️ XML
+✒️ CameraX
+
+### Other Tools
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 
-* MVVM
-* XML
-* CameraX
 
 
-## ⭐ Documentation
+## 📁 Documentation
 
 **The section provides with the proper documentation and ideas to be implemented inside the application**
 [Documentation](https://docs.google.com/document/d/1MWGzi4aSHy0WVdcFUYnCEOj0bUHtMP3-KEUHuGplk2I/edit?usp=sharing)  
 
 
-## ⭐ Ideas to be implemented 💡
+
+## 💭 Ideas to be implemented
 
 ### DONORS
 1️⃣ **Login Page**
@@ -59,6 +64,7 @@ As usual, you can get started by cloning the project to your local machine:
       * Leaderboard/Podium
       * Requirement Section  
       * About section of the registered NGOs
+
 ### NGOs
 1️⃣ **Login Page  
 2️⃣ Three Sign Up Pages  
@@ -71,11 +77,13 @@ As usual, you can get started by cloning the project to your local machine:
    	  &nbsp; &nbsp; iii) Foods  
 	  &nbsp; &nbsp; iv) Stationery(only the donated ones)  
    * Requirement Section
-   * Leaderboard/Podium  
+   * Podium  
     
 Check out the document for complete information about the [Ideas to be Implemented](https://docs.google.com/document/d/1jM_qZiC8mtyg2Ie9RheusLiPAMX-tqARf0kUsD8s7vY/edit?usp=sharing)
 
-## ⭐ Contributing 
+
+
+## 💡 Contributing 
 
 1️⃣ Fork it  
 
@@ -88,27 +96,29 @@ Check out the document for complete information about the [Ideas to be Implement
 5️⃣ Create a new Pull Request
 
 
-## ⭐ Issues 
+## 📧 Issues 
 Contributions, issues and feature requests are welcome!
 Feel free to check [issues page](https://github.com/1HazArd1/Samarpan/issues). You can also take a look at the **contributing guide**.
 
-## ⭐ Contributors
+
+## 💁 Contributors
+
+Thanks to these amazing people!
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/1HazArd1"><img src="https://avatars.githubusercontent.com/u/77063438?v=4" width="100px;" alt=""/><br /><sub><b>Aakash Sinha</b></sub></a><br /><a href="" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/Suswan114"><img src="https://avatars.githubusercontent.com/u/67154528?v=4" width="100px;" alt=""/><br /><sub><b>Suswan</b></sub></a><br /><a href="" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Suswan114"><img src="https://avatars.githubusercontent.com/u/67154528?v=4" width="100px;" alt=""/><br /><sub><b>Suswan Biswas</b></sub></a><br /><a href="" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/Hiteshsukhwani29"><img src="https://avatars.githubusercontent.com/u/55627571?v=4" width="100px;" alt=""/><br /><sub><b>Hitesh Sukhwani</b></sub></a><br /><a href="" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/prithasaha2722"><img src="https://avatars.githubusercontent.com/u/96041483?v=4" width="100px;" alt=""/><br /><sub><b>Pritha Saha</b></sub></a><br /><a href="" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/vmantri83"><img src="https://avatars.githubusercontent.com/u/92944931?v=4" width="100px;" alt=""/><br /><sub><b>Vidhi Mantri</b></sub></a><br /><a href="" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/Manasvi-Vats"><img src="https://avatars.githubusercontent.com/u/70485365?v=4" width="100px;" alt=""/><br /><sub><b>Manasvi Vats</b></sub></a><br /><a href="" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/Rohit-554"><img src="https://avatars.githubusercontent.com/u/48874687?v=4" width="100px;" alt=""/><br /><sub><b>Rohit</b></sub></a><br /><a href="" title="Code">💻</a></td>Ro
+    <td align="center"><a href="https://github.com/Rohit-554"><img src="https://avatars.githubusercontent.com/u/48874687?v=4" width="100px;" alt=""/><br /><sub><b>Rohit Kumar</b></sub></a><br /><a href="" title="Code">💻</a></td>
    
   </tr>
 </table>
 
 
 
-## Maintainers ✨
+## ✨ Maintainers
 
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
