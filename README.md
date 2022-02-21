@@ -103,7 +103,7 @@ Feel free to check [issues page](https://github.com/1HazArd1/Samarpan/issues). Y
 
 ## 💁 Contributors
 
-Thanks to these amazing people!
+Thanks to these amazing people! 👏
 <table>
   <tr>
     <td align="center"><a href="https://github.com/Suswan114"><img src="https://avatars.githubusercontent.com/u/67154528?v=4" width="100px;" alt=""/><br /><sub><b>Suswan Biswas</b></sub></a><br /><a href="" title="Code">💻</a></td>
