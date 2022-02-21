@@ -14,6 +14,9 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="theme_inputField" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/black</item>
+    </style>
     <style name="splashScreenTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:windowBackground">@drawable/splash_image</item>
     </style> <!--uncomment this for the splash screen-->
