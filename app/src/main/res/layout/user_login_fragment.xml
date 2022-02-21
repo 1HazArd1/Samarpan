@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:padding="20dp"
-    android:background="@drawable/login_background"
+    android:padding="30dp"
+    android:background="@color/theme_background_color"
     android:layout_height="match_parent">
 
     <!--Logo of the application will be added here-->
@@ -14,15 +14,6 @@
         android:layout_height="100dp"
         android:src="@drawable/ic_launcher_foreground" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:fontFamily="@font/bungee"
-        android:text="Hello There, Welcome Back"
-        android:textColor="@color/black"
-        android:textSize="30sp" />
-
     <!--TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -31,12 +22,14 @@
         android:textColor="@color/black"
         android:textSize="15sp" /-->
 
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="monospace"
-        android:text="Sign In to Continue"
-        android:textColor="@color/black"
+        android:layout_marginTop="140dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/tv_signIn_login"
+        android:textColor="@color/theme_text_color_body"
         android:textSize="18sp" />
 
     <LinearLayout
@@ -50,13 +43,12 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email">
+            android:hint="@string/et_email">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/donor_email"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black" />
+                android:layout_height="wrap_content" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -64,16 +56,15 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            app:passwordToggleEnabled="true"
-            android:hint="Password">
+            android:layout_marginTop="6dp"
+            android:hint="@string/et_password"
+            app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/donor_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:textColor="@color/black" />
+                android:inputType="textPassword" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -82,12 +73,12 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:layout_margin="5dp"
-            android:background="#00000000"
+            android:background="@color/theme_transparent_button"
             android:elevation="0dp"
-            android:fontFamily="monospace"
-            android:text="Forgot Password?"
+            android:fontFamily="@font/roboto"
+            android:text="@string/btn_forgotPass_login"
             android:textAllCaps="false"
-            android:textColor="@color/black" />
+            android:textColor="@color/theme_text_color_body" />
 
         <Button
             android:id="@+id/userLogin"
@@ -96,84 +87,38 @@
             android:background="@drawable/login_button"
             android:elevation="35dp"
             android:text="Login"
-            android:textColor="@color/white"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/theme_button_text"
             android:textSize="16sp"
             android:textStyle="bold" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginTop="8dp">
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/donor_google"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:backgroundTint="@color/white"
-                android:contentDescription="Login using google"
-                android:elevation="35dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/donor_facebook"
-                app:layout_constraintHorizontal_bias="0.705"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/donor_facebook"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:backgroundTint="@color/white"
-                android:contentDescription="Login using facebook"
-                android:elevation="35dp"
-                android:src="@drawable/login_facebook"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/donor_twitter"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:backgroundTint="@color/white"
-                android:contentDescription="Login using twitter"
-                android:elevation="35dp"
-                android:src="@drawable/twitter_icon"
-                app:layout_constraintBottom_toBottomOf="@+id/donor_google"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.295"
-                app:layout_constraintStart_toEndOf="@+id/donor_facebook"
-                app:layout_constraintTop_toTopOf="@+id/donor_google" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
         <LinearLayout
+            android:id="@+id/userSignUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_gravity="center"
-            android:layout_marginTop="16dp">
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
                 android:padding="5dp"
-                android:fontFamily="monospace"
-                android:text="Don\'t have an account?"
-                />
+                android:textColor="@color/theme_text_color_body"
+                android:text="Don\'t have an account?" />
+
             <TextView
-                android:id="@+id/userSignUp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
                 android:foreground="?attr/selectableItemBackground"
                 android:padding="5dp"
-                android:fontFamily="monospace"
-                android:textColor="@color/black"
                 android:text="Register"
-                android:textStyle="bold"/>
+                android:textColor="@color/theme_text_color_bold"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -181,12 +126,13 @@
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_marginTop="20dp"
-            android:background="#00000000"
+            android:layout_gravity="center"
+            android:background="@color/theme_transparent_button"
             android:elevation="0dp"
-            android:fontFamily="monospace"
-            android:text="Register as NGO"
+            android:fontFamily="@font/roboto"
+            android:text="@string/btn_ngoRegister_login"
             android:textAllCaps="false"
-            android:textColor="@color/black" />
+            android:textColor="@color/theme_text_color_bold" />
 
         <!--com.google.android.material.floatingactionbutton.FloatingActionButton
             android:layout_width="wrap_content"

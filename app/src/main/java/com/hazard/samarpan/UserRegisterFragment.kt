@@ -51,8 +51,10 @@ class UserRegisterFragment: Fragment(){
         btnRegister?.setOnClickListener{
             val mail=email?.text.toString().trim()
             val pass=password?.text.toString().trim()
-            if(TextUtils.isEmpty(mail) || TextUtils.isEmpty(pass)){
+            if(TextUtils.isEmpty(mail)){
                 email?.error = "Email cannot be empty"
+            }
+            if(TextUtils.isEmpty(pass)){
                 password?.error = "Password cannot be empty"
             }
             if (!(mail.matches(emailPattern.toRegex()))) {
