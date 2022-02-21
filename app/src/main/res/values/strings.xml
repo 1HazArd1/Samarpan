@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Samarpan</string>
-    <string name="userLoginQuote">You would be the sunshine to someone\'s gray skies</string>
+
+    <string name="tv_signIn_login">Sign In to Continue…</string>
+    <string name="et_email">Email</string>
+    <string name="et_password">Password</string>
+    <string name="btn_forgotPass_login">Forgot Password?</string>
+    <string name="btn_ngoRegister_login">Register as NGO</string>
 </resources>

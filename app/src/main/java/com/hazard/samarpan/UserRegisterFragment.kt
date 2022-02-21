@@ -51,8 +51,10 @@ class UserRegisterFragment: Fragment(){
         btnRegister?.setOnClickListener{
             val mail=email?.text.toString().trim()
             val pass=password?.text.toString().trim()
-            if(TextUtils.isEmpty(mail) || TextUtils.isEmpty(pass)){
+            if(TextUtils.isEmpty(mail)){
                 email?.error = "Email cannot be empty"
+            }
+            if(TextUtils.isEmpty(pass)){
                 password?.error = "Password cannot be empty"
             }
             if (!(mail.matches(emailPattern.toRegex()))) {
@@ -68,7 +70,7 @@ class UserRegisterFragment: Fragment(){
 
                         //if registration is done successfully
                         if(task.isSuccessful){
-                            Toast.makeText(activity,"You were registered successfully.", Toast.LENGTH_LONG).show()
+                            Toast.makeText(activity,"You were registered successfully.", Toast.LENGTH_SHORT).show()
                             /* add the intent to go to the main dashboard of the application and also add finish() so that
                                if the user presses back after registration they don't go back to the registration page
                                it basically clears all the previous activities

@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.TextView
+import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.google.android.material.textfield.TextInputEditText
@@ -17,8 +17,7 @@ import com.google.firebase.ktx.Firebase
 
 class UserLoginFragment: Fragment() {
     private var itemView: View?=null
-
-    private var userSignUp: TextView?=null
+    private var userSignUp: LinearLayout?=null
     private var email: TextInputEditText?=null
     private var password: TextInputEditText?=null
     private var btnLogin: Button?=null
@@ -55,10 +54,10 @@ class UserLoginFragment: Fragment() {
 
                     if(task.isSuccessful){
                         // logic for navigating to the dashboard
-                        Toast.makeText(activity,"Logged in Successfully", Toast.LENGTH_LONG).show()
+                        Toast.makeText(activity,"Logged in Successfully", Toast.LENGTH_SHORT).show()
                     }
                     else{
-                        Toast.makeText(activity,task.exception!!.message.toString(), Toast.LENGTH_LONG).show()
+                        Toast.makeText(activity,task.exception!!.message.toString(), Toast.LENGTH_SHORT).show()
                     }
                 }
             }

@@ -2,6 +2,7 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/bungee</item>
+        <item>@font/roboto</item>
         <item>@font/zeyada</item>
     </array>
 </resources>
