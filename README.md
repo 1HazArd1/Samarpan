@@ -97,6 +97,7 @@ Check out the document for complete information about the [Ideas to be Implement
 
 5️⃣ Create a new Pull Request
 
+ Check out the [contribution.md](https://github.com/Diversion2k22/Samarpan/blob/master/Contribution.md) file for ellaborate idea on how to contribute for Samarpan 
 
 ## 📧 Issues 
 Contributions, issues and feature requests are welcome!
