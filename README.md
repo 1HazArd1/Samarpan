@@ -31,10 +31,12 @@ As usual, you can get started by cloning the project to your local machine:
 
 
 
+
 ## 📁 Documentation
 
-**The section provides with the proper documentation and ideas to be implemented inside the application**
-[Documentation](https://docs.google.com/document/d/1MWGzi4aSHy0WVdcFUYnCEOj0bUHtMP3-KEUHuGplk2I/edit?usp=sharing)  
+**The section provides with the proper documentation and ideas to be implemented inside the application**  
+[Documentation](https://docs.google.com/document/d/1oKrF6ThzTL4lW3s_yeCEzV8fNatjxAeOme1ON49wA3A/edit?usp=sharing)  
+
 
 
 
@@ -79,7 +81,7 @@ As usual, you can get started by cloning the project to your local machine:
    * Requirement Section
    * Podium  
     
-Check out the document for complete information about the [Ideas to be Implemented](https://docs.google.com/document/d/1jM_qZiC8mtyg2Ie9RheusLiPAMX-tqARf0kUsD8s7vY/edit?usp=sharing)
+Check out the document for complete information about the [Ideas to be Implemented](https://docs.google.com/document/d/1jM_qZiC8mtyg2Ie9RheusLiPAMX-tqARf0kUsD8s7vY/edit)
 
 
 
