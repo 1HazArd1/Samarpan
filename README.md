@@ -92,12 +92,24 @@ Check out the document for complete information about the [Ideas to be Implement
 Contributions, issues and feature requests are welcome!
 Feel free to check [issues page](https://github.com/1HazArd1/Samarpan/issues). You can also take a look at the **contributing guide**.
 
+## ⭐ Contributors
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/1HazArd1"><img src="https://avatars.githubusercontent.com/u/77063438?v=4" width="100px;" alt=""/><br /><sub><b>Aakash Sinha</b></sub></a><br /><a href="" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Suswan114"><img src="https://avatars.githubusercontent.com/u/67154528?v=4" width="100px;" alt=""/><br /><sub><b>Suswan</b></sub></a><br /><a href="" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Hiteshsukhwani29"><img src="https://avatars.githubusercontent.com/u/55627571?v=4" width="100px;" alt=""/><br /><sub><b>Hitesh Sukhwani</b></sub></a><br /><a href="" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/prithasaha2722"><img src="https://avatars.githubusercontent.com/u/96041483?v=4" width="100px;" alt=""/><br /><sub><b>Pritha Saha</b></sub></a><br /><a href="" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/vmantri83"><img src="https://avatars.githubusercontent.com/u/92944931?v=4" width="100px;" alt=""/><br /><sub><b>Vidhi Mantri</b></sub></a><br /><a href="" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Manasvi-Vats"><img src="https://avatars.githubusercontent.com/u/70485365?v=4" width="100px;" alt=""/><br /><sub><b>Manasvi Vats</b></sub></a><br /><a href="" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Rohit-554"><img src="https://avatars.githubusercontent.com/u/48874687?v=4" width="100px;" alt=""/><br /><sub><b>Rohit</b></sub></a><br /><a href="" title="Code">💻</a></td>Ro
+   
+  </tr>
+</table>
 
 
 
 ## Maintainers ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -105,6 +117,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="http:// https://github.com/1HazArd1"><img src="https://avatars.githubusercontent.com/u/77063438?v=4" width="100px;" alt=""/><br /><sub><b>Aakash Sinha</b></sub></a><br /><a href="" title="Code">💻</a></td>
+    
    
   </tr>
 </table>
