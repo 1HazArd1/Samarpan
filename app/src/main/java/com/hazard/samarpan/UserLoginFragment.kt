@@ -54,10 +54,10 @@ class UserLoginFragment: Fragment() {
 
                     if(task.isSuccessful){
                         // logic for navigating to the dashboard
-                        Toast.makeText(activity,"Logged in Successfully", Toast.LENGTH_LONG).show()
+                        Toast.makeText(activity,"Logged in Successfully", Toast.LENGTH_SHORT).show()
                     }
                     else{
-                        Toast.makeText(activity,task.exception!!.message.toString(), Toast.LENGTH_LONG).show()
+                        Toast.makeText(activity,task.exception!!.message.toString(), Toast.LENGTH_SHORT).show()
                     }
                 }
             }
