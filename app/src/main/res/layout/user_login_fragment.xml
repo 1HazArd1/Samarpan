@@ -4,7 +4,6 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:padding="30dp"
-    android:background="@color/theme_background_color"
     android:layout_height="match_parent">
 
     <!--Logo of the application will be added here-->
