@@ -78,7 +78,9 @@ Check the [Wireframe](https://www.figma.com/file/qFdwZSrziy4OLva20BxbBD/Samarpan
 	e)Make a small clip or take screenshots before and after making changes.
 
  4) Track your changes  
-     ```git add .```
+     ```bash 
+     git add .
+     ```
  5) Commit all the changes.  
 	a)The commit message should be relevant and short.(usually title of pull request)   
 	b)Make sure to condense your changes into a single commit  
