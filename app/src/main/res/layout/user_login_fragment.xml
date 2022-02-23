@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:padding="30dp"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp">
 
     <!--Logo of the application will be added here-->
     <ImageView
@@ -42,13 +42,15 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColorHint="@color/theme_text_color_body"
-            android:hint="@string/et_email">
+            android:hint="@string/et_email"
+            app:boxStrokeColor="@color/black"
+            app:hintTextColor="@color/theme_text_color_body">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/donor_email"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textColor="@color/theme_text_color_body" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -57,15 +59,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
-            android:textColorHint="@color/theme_text_color_body"
             android:hint="@string/et_password"
+            app:boxStrokeColor="@color/black"
+            app:hintTextColor="@color/theme_text_color_body"
             app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/donor_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:textColor="@color/theme_text_color_body" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -85,14 +89,13 @@
             android:id="@+id/userLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
             android:background="@drawable/login_button"
             android:elevation="35dp"
             android:text="Login"
-            android:layout_marginTop="30dp"
             android:textColor="@color/theme_button_text"
             android:textSize="16sp"
             android:textStyle="bold" />
-
 
 
         <LinearLayout
@@ -108,14 +111,13 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto"
                 android:padding="5dp"
-                android:textColor="@color/theme_text_color_body"
-                android:text="Don\'t have an account?" />
+                android:text="Don\'t have an account?"
+                android:textColor="@color/theme_text_color_body" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto"
-                android:foreground="?attr/selectableItemBackground"
                 android:padding="5dp"
                 android:text="Register"
                 android:textColor="@color/theme_text_color_bold"
@@ -126,8 +128,8 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:layout_marginTop="20dp"
             android:layout_gravity="center"
+            android:layout_marginTop="20dp"
             android:background="@color/theme_transparent_button"
             android:elevation="0dp"
             android:fontFamily="@font/roboto"

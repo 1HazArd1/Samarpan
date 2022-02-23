@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.EditText
+import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.google.android.gms.tasks.OnCompleteListener
@@ -25,7 +25,8 @@ class UserRegisterFragment: Fragment(){
     private var password: TextInputEditText?=null
     private var phoneNo: TextInputEditText?=null
     private var btnRegister : Button?=null
-    private var btnSignIn: Button?=null
+    private var btnSignIn: LinearLayout?=null
+
 
     private lateinit var registerAuth: FirebaseAuth
 
@@ -35,12 +36,12 @@ class UserRegisterFragment: Fragment(){
 
         itemView=layoutInflater.inflate(R.layout.user_registration_fragment,container,false)
 
-        btnSignIn=itemView?.findViewById(R.id.registerSignIn)
         btnRegister=itemView?.findViewById(R.id.btnUserRegister)
         email=itemView?.findViewById(R.id.registerEmail)
         password=itemView?.findViewById(R.id.registerPassword)
         name=itemView?.findViewById(R.id.registerName)
         phoneNo=itemView?.findViewById(R.id.registerPhone)
+        btnSignIn=itemView?.findViewById(R.id.btnRegisterSignIn)
 
         registerAuth= Firebase.auth
 
