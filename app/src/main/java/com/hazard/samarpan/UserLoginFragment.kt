@@ -41,7 +41,7 @@ class UserLoginFragment: Fragment() {
         registerAuth= Firebase.auth
 
         ngoSignUp.setOnClickListener{
-            activity?.supportFragmentManager?.beginTransaction()?.replace(R.id.fragment_container1, NgoSignup1())?.commit()
+            activity?.supportFragmentManager?.beginTransaction()?.replace(R.id.fragment_container1, NgoSignup1())?.addToBackStack(null)?.commit()
         }
 
         userSignUp?.setOnClickListener {

@@ -98,7 +98,7 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="10dp"
-                android:hint="Phone number">
+                android:hint="@string/ngosignup1_phone_number">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/et_ngosignup_phone"
@@ -199,6 +199,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
+            android:id="@+id/btn_ngosignup1_next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
@@ -208,8 +209,8 @@
             android:paddingLeft="50dp"
             android:paddingTop="15dp"
             android:paddingBottom="15dp"
-            android:enabled="false"
-            android:text="Next" />
+            android:enabled="true"
+            android:text="@string/next" />
 
     </LinearLayout>
 

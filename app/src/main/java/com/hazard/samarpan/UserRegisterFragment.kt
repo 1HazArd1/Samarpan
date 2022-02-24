@@ -47,7 +47,7 @@ class UserRegisterFragment: Fragment(){
 
         btnSignIn?.setOnClickListener {
             val userLogin=UserLoginFragment()
-            activity?.supportFragmentManager?.beginTransaction()?.replace(R.id.loginFragment,userLogin)?.commit()
+            activity?.supportFragmentManager?.beginTransaction()?.replace(R.id.fragment_container1,userLogin)?.commit()
         }
         btnRegister?.setOnClickListener{
             val mail=email?.text.toString().trim()
