@@ -6,4 +6,8 @@
     <string name="et_password">Password</string>
     <string name="btn_forgotPass_login">Forgot Password?</string>
     <string name="btn_ngoRegister_login">Register as NGO</string>
+
+    <string name="userLoginQuote">You would be the sunshine to someone\'s gray skies</string>
+    <string name="welcome_to_samarpan">Welcome to samarpan</string>
+    <string name="ngosignup_uploadimage">Upload Organization’s logo</string>
 </resources>
