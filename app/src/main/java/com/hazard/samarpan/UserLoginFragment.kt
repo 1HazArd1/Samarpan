@@ -1,5 +1,6 @@
 package com.hazard.samarpan
 
+import NgoSignup1
 import android.os.Bundle
 import android.text.TextUtils
 import android.view.LayoutInflater
@@ -7,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.LinearLayout
+import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.google.android.material.textfield.TextInputEditText
@@ -22,6 +24,8 @@ class UserLoginFragment: Fragment() {
     private var password: TextInputEditText?=null
     private var btnLogin: Button?=null
 
+    lateinit var ngoSignUp: TextView
+
     private lateinit var registerAuth: FirebaseAuth
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -32,11 +36,17 @@ class UserLoginFragment: Fragment() {
         userSignUp=itemView!!.findViewById(R.id.userSignUp)
         btnLogin=itemView!!.findViewById(R.id.userLogin)
 
+        ngoSignUp = itemView!!.findViewById(R.id.tv_login_registerasngo)
+
         registerAuth= Firebase.auth
+
+        ngoSignUp.setOnClickListener{
+            activity?.supportFragmentManager?.beginTransaction()?.replace(R.id.fragment_container1, NgoSignup1())?.addToBackStack(null)?.commit()
+        }
 
         userSignUp?.setOnClickListener {
               val userRegistrationPage=UserRegisterFragment()
-              activity?.supportFragmentManager?.beginTransaction()?.replace(R.id.loginFragment,userRegistrationPage)
+              activity?.supportFragmentManager?.beginTransaction()?.replace(R.id.fragment_container1,userRegistrationPage)
                   ?.addToBackStack(null)?.commit()
         }
 

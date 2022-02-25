@@ -9,6 +9,8 @@
     <color name="theme_text_color_bold">#333333</color>
     <color name="theme_transparent_button">#00000000</color>
 
+    <color name="ColorTextIcons">#b6FFFFFF</color>
+
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>

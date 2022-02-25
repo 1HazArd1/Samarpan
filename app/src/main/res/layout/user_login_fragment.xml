@@ -35,7 +35,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:layout_marginBottom="20dp"
         android:orientation="vertical">
 
         <com.google.android.material.textfield.TextInputLayout
@@ -90,9 +89,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/login_button"
             android:elevation="35dp"
             android:text="Login"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:textColor="@color/theme_button_text"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -125,16 +127,14 @@
 
         </LinearLayout>
 
-        <Button
+        <TextView
+            android:id="@+id/tv_login_registerasngo"
             android:layout_width="wrap_content"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:background="@color/theme_transparent_button"
-            android:elevation="0dp"
             android:fontFamily="@font/roboto"
             android:text="@string/btn_ngoRegister_login"
-            android:textAllCaps="false"
             android:textColor="@color/theme_text_color_bold" />
 
         <!--com.google.android.material.floatingactionbutton.FloatingActionButton
