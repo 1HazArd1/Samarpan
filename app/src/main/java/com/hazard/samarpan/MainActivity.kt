@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity() {
         setTheme(R.style.Theme_Samarpan)
         setContentView(R.layout.activity_main)
         addFragment()
+
     }
 
     private fun addFragment() {

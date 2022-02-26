@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.auth.AuthResult
@@ -48,6 +49,7 @@ class UserRegisterFragment: Fragment(){
         btnSignIn?.setOnClickListener {
             val userLogin=LoginFragment()
             activity?.supportFragmentManager?.beginTransaction()?.replace(R.id.fragment_container1,userLogin)?.commit()
+
         }
         btnRegister?.setOnClickListener{
             val mail=email?.text.toString().trim()
@@ -64,28 +66,39 @@ class UserRegisterFragment: Fragment(){
             if(!(isValidPassword(pass))){
                 password?.error="Password format is invalid"
             }
-            else{
+            else {
                 //user registration
-                registerAuth.createUserWithEmailAndPassword(mail,pass).addOnCompleteListener(
-                    OnCompleteListener <AuthResult>{ task ->
+                try {
+                    registerAuth.createUserWithEmailAndPassword(mail, pass).addOnCompleteListener(
+                        OnCompleteListener<AuthResult> { task ->
 
-                        //if registration is done successfully
-                        if(task.isSuccessful){
-                            Toast.makeText(activity,"You were registered successfully.", Toast.LENGTH_SHORT).show()
-                            /* add the intent to go to the main dashboard of the application and also add finish() so that
+                            //if registration is done successfully
+                            if (task.isSuccessful) {
+                                Toast.makeText(
+                                    activity,
+                                    "You were registered successfully.",
+                                    Toast.LENGTH_SHORT
+                                ).show()
+                                /* add the intent to go to the main dashboard of the application and also add finish() so that
                                if the user presses back after registration they don't go back to the registration page
                                it basically clears all the previous activities
                              */
-                        }
-                        // if the registration failed somehow
-                        else{
-                            Toast.makeText(activity,
-                                task.exception!!.message.toString(),
-                                Toast.LENGTH_SHORT).show()
-                        }
+                            }
+                            // if the registration failed somehow
+                            else {
+                                Toast.makeText(
+                                    activity,
+                                    task.exception!!.message.toString(),
+                                    Toast.LENGTH_SHORT
+                                ).show()
+                            }
 
-                    }
-                )
+                        }
+                    )
+                }
+                catch(e:IllegalArgumentException){
+                    Toast.makeText(context,"Fields cannot be empty",Toast.LENGTH_SHORT)
+                }
             }
         }
         return itemView

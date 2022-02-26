@@ -60,15 +60,28 @@ class LoginFragment: Fragment() {
                 password?.error = "Password cannot be empty"
             }
             else{
-                registerAuth.signInWithEmailAndPassword(mail,pass).addOnCompleteListener{ task ->
+                try {
+                    registerAuth.signInWithEmailAndPassword(mail, pass)
+                        .addOnCompleteListener { task ->
 
-                    if(task.isSuccessful){
-                        // logic for navigating to the dashboard
-                        Toast.makeText(activity,"Logged in Successfully", Toast.LENGTH_SHORT).show()
-                    }
-                    else{
-                        Toast.makeText(activity,task.exception!!.message.toString(), Toast.LENGTH_SHORT).show()
-                    }
+                            if (task.isSuccessful) {
+                                // logic for navigating to the dashboard
+                                Toast.makeText(
+                                    activity,
+                                    "Logged in Successfully",
+                                    Toast.LENGTH_SHORT
+                                ).show()
+                            } else {
+                                Toast.makeText(
+                                    activity,
+                                    task.exception!!.message.toString(),
+                                    Toast.LENGTH_SHORT
+                                ).show()
+                            }
+                        }
+                }
+                catch (e:IllegalArgumentException){
+                    Toast.makeText(context,"Fields cannot be empty",Toast.LENGTH_SHORT)
                 }
             }
         }
