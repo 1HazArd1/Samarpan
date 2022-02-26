@@ -4,10 +4,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
-import com.hazard.samarpan.NgoSignup2
+import com.hazard.samarpan.NgoSignup2Fragment
 import com.hazard.samarpan.R
 
-class NgoSignup1 : Fragment() {
+class NgoSignup1Fragment : Fragment() {
 
     lateinit var nextBtn: Button
 
@@ -21,7 +21,9 @@ class NgoSignup1 : Fragment() {
         nextBtn = v.findViewById(R.id.btn_ngosignup1_next)
         nextBtn.setOnClickListener {
             activity?.supportFragmentManager?.beginTransaction()
-                ?.replace(R.id.fragment_container1, NgoSignup2())?.addToBackStack(null)?.commit()
+                ?.replace(R.id.fragment_container1,
+                    NgoSignup2Fragment()
+                )?.addToBackStack(null)?.commit()
         }
 
         return v

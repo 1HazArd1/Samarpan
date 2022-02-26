@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun addFragment() {
-        val userSignInLayout=UserLoginFragment()
+        val userSignInLayout=LoginFragment()
         supportFragmentManager.beginTransaction().add(R.id.fragment_container1,userSignInLayout).commit()
     }
 }

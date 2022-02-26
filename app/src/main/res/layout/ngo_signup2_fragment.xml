@@ -2,34 +2,34 @@
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:overScrollMode="never">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="30dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/roboto_bold"
+            android:fontFamily="@font/righteous"
             android:text="@string/lets_us_know_you_better"
-            android:textColor="#8E8888"
-            android:layout_marginTop="24dp"
-            android:layout_marginLeft="30dp"
-            android:textSize="18sp" />
+            android:textColor="@color/theme_text_color_heading"
+            android:layout_marginTop="20dp"
+            android:textSize="23sp" />
 
         <com.google.android.material.textfield.TextInputLayout
 
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
             android:hint="@string/oragnization_type"
             android:orientation="horizontal"
-            >
+            app:boxStrokeColor="@color/black"
+            app:hintTextColor="@color/theme_text_color_body">
 
             <AutoCompleteTextView
                 android:id="@+id/ngosignup_select_orgtype"
@@ -42,12 +42,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/roboto_bold"
+            android:fontFamily="@font/roboto_medium"
             android:text="@string/upload_below_documents"
-            android:textColor="#8E8888"
+            android:textColor="@color/theme_text_color_body"
             android:layout_marginTop="25dp"
-            android:layout_marginLeft="30dp"
-            android:textSize="16sp" />
+            android:textSize="18sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -61,7 +60,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="9.25"
-                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/theme_text_color_body"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="10dp"
                 android:text="@string/pan_card"/>
@@ -73,10 +73,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="6dp"
-                android:layout_marginRight="30dp"
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
                 android:layout_weight="0.75"
+                android:textAllCaps="false"
                 android:text="@string/upload" />
 
         </LinearLayout>
@@ -92,8 +92,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="9.25"
-                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/roboto"
                 android:layout_marginTop="15dp"
+                android:textColor="@color/theme_text_color_body"
                 android:layout_marginBottom="10dp"
                 android:text="@string/registration_certificate"/>
 
@@ -104,10 +105,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="6dp"
-                android:layout_marginRight="30dp"
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
                 android:layout_weight="0.75"
+                android:textAllCaps="false"
                 android:text="@string/upload" />
 
         </LinearLayout>
@@ -123,8 +124,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="9.25"
-                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/roboto"
                 android:layout_marginTop="15dp"
+                android:textColor="@color/theme_text_color_body"
                 android:layout_marginBottom="10dp"
                 android:text="@string/annual_report"/>
 
@@ -135,10 +137,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="6dp"
-                android:layout_marginRight="30dp"
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
                 android:layout_weight="0.75"
+                android:textAllCaps="false"
                 android:text="@string/upload" />
 
         </LinearLayout>
@@ -154,9 +156,10 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="9.25"
-                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/roboto"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="10dp"
+                android:textColor="@color/theme_text_color_body"
                 android:text="@string/fcra_document"/>
 
 
@@ -166,10 +169,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="6dp"
-                android:layout_marginRight="30dp"
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
                 android:layout_weight="0.75"
+                android:textAllCaps="false"
                 android:text="@string/upload" />
 
         </LinearLayout>
@@ -185,6 +188,7 @@
             android:paddingTop="15dp"
             android:paddingRight="50dp"
             android:paddingBottom="15dp"
+            android:textAllCaps="false"
             android:text="@string/get_started" />
 
     </LinearLayout>

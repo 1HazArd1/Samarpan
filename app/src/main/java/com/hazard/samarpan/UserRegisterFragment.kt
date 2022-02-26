@@ -46,7 +46,7 @@ class UserRegisterFragment: Fragment(){
         registerAuth= Firebase.auth
 
         btnSignIn?.setOnClickListener {
-            val userLogin=UserLoginFragment()
+            val userLogin=LoginFragment()
             activity?.supportFragmentManager?.beginTransaction()?.replace(R.id.fragment_container1,userLogin)?.commit()
         }
         btnRegister?.setOnClickListener{
@@ -90,6 +90,7 @@ class UserRegisterFragment: Fragment(){
         }
         return itemView
     }
+
     override fun onStart() {
         super.onStart()
         // check if the user is signed in then don't open login or register page directly send to the required activity

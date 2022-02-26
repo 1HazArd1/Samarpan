@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class NgoSignup2 extends Fragment {
+public class NgoSignup2Fragment extends Fragment {
 
     @Nullable
     @Override

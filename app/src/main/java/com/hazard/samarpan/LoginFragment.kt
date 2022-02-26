@@ -1,6 +1,6 @@
 package com.hazard.samarpan
 
-import NgoSignup1
+import NgoSignup1Fragment
 import android.os.Bundle
 import android.text.TextUtils
 import android.view.LayoutInflater
@@ -17,19 +17,19 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
 
-class UserLoginFragment: Fragment() {
+class LoginFragment: Fragment() {
     private var itemView: View?=null
     private var userSignUp: LinearLayout?=null
     private var email: TextInputEditText?=null
     private var password: TextInputEditText?=null
     private var btnLogin: Button?=null
 
-    lateinit var ngoSignUp: TextView
+    private lateinit var ngoSignUp: TextView
 
     private lateinit var registerAuth: FirebaseAuth
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        itemView =layoutInflater.inflate(R.layout.user_login_fragment,container,false)
+        itemView =layoutInflater.inflate(R.layout.login_fragment,container,false)
 
         email=itemView?.findViewById(R.id.donor_email)
         password=itemView?.findViewById(R.id.donor_password)
@@ -41,7 +41,7 @@ class UserLoginFragment: Fragment() {
         registerAuth= Firebase.auth
 
         ngoSignUp.setOnClickListener{
-            activity?.supportFragmentManager?.beginTransaction()?.replace(R.id.fragment_container1, NgoSignup1())?.addToBackStack(null)?.commit()
+            activity?.supportFragmentManager?.beginTransaction()?.replace(R.id.fragment_container1, NgoSignup1Fragment())?.addToBackStack(null)?.commit()
         }
 
         userSignUp?.setOnClickListener {
@@ -75,4 +75,5 @@ class UserLoginFragment: Fragment() {
 
         return itemView
     }
+    
 }
