@@ -19,15 +19,26 @@ Check the [Wireframe](https://www.figma.com/file/qFdwZSrziy4OLva20BxbBD/Samarpan
   
 3) Clone your forked repository  
 	git clone https://github.com/<your_username>/Samarpan.git  
+
+
+
+	![](https://github.com/Suswan114/Samarpan/blob/master/images/clone_screenshot.png)
 	
-4) Use this link to clone this repository inside you local machine in the android studio IDE     
- 	a) Open up android studio  
-	b) Click get from version control  
-	c) Paste the link to clone the repo
 	
-5) The repository is cloned in your local machine.  
+4) Use the above link to clone this repository inside you local machine in the android studio IDE     
+ 	- Open up android studio 
+ 	 
+	- Click get from version control  
+	
+	![](https://github.com/Diversion2k22/Samarpan/blob/master/images/GetFromVCS.png)
+	
+	
+	- Paste the link to clone the repo
+	
+	![](https://github.com/Diversion2k22/Samarpan/blob/master/images/CopyGITLink.png)
+	
+5) The repository is now cloned in your local machine.  
  
-![](https://github.com/Suswan114/Samarpan/blob/master/images/clone_screenshot.png)
 # Instructions to follow while contributing to SAMARPAN
 ## Follow proper naming convention
 
@@ -64,7 +75,7 @@ Check the [Wireframe](https://www.figma.com/file/qFdwZSrziy4OLva20BxbBD/Samarpan
 # Contributing to the project
 1) Start working on the issue once the maintainers have reviewed the issue 
 2) Create a new branch inside android studio before working on any changes
-    the branch created should have the following convention. 
+    the branch name should follow the following convention. 
     "your name/username""related work"  
      for eg"xyzUserRegistration"  
      
@@ -100,4 +111,4 @@ Check the [Wireframe](https://www.figma.com/file/qFdwZSrziy4OLva20BxbBD/Samarpan
 
 
    ### Voila ❗ You have made a PR to Samarpan 💥.  
-   ## Every Help is appreciated.
+   ### Every Help is appreciated.
