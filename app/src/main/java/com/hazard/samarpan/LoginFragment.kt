@@ -47,7 +47,7 @@ class LoginFragment: Fragment() {
         userSignUp?.setOnClickListener {
               val userRegistrationPage=UserRegisterFragment()
               activity?.supportFragmentManager?.beginTransaction()?.replace(R.id.fragment_container1,userRegistrationPage)
-                  ?.addToBackStack(null)?.commit()
+                  ?.commit()
         }
 
         btnLogin?.setOnClickListener {
