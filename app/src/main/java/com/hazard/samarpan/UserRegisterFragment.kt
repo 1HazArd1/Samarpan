@@ -1,6 +1,8 @@
 package com.hazard.samarpan
 
+import android.app.Activity
 import android.content.ContentValues.TAG
+import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
 import android.util.Log
@@ -51,6 +53,7 @@ class UserRegisterFragment : Fragment() {
         phoneNo = itemView?.findViewById(R.id.registerPhone)
         etAddress = itemView?.findViewById(R.id.registerAddress)
         etPinCode = itemView?.findViewById(R.id.registerPinCode)
+
 
         registerAuth = Firebase.auth
 
@@ -133,6 +136,12 @@ class UserRegisterFragment : Fragment() {
                                     if the user presses back after registration they don't go back to the registration page
                                     it basically clears all the previous activities
                                 */
+                                activity?.let{
+                                    val intent = Intent (it, Main2Activity::class.java)
+                                    it.startActivity(intent)
+                                }
+                                activity?.finish()  /* as the fragment does not have finish function this function finds the
+                                                      activity to which the fragment is attached and finishes it */
                             }
                             // if the registration failed somehow
                             else {
@@ -153,15 +162,6 @@ class UserRegisterFragment : Fragment() {
         return itemView
     }
 
-
-    override fun onStart() {
-        super.onStart()
-        // check if the user is signed in then don't open login or register page directly send to the required activity
-        val currentUser = registerAuth.currentUser
-        if (currentUser != null) {
-            // write logic to send to the main dashboard of the application
-        }
-    }
 
     private fun isValidPassword(password: String): Boolean {
         val passwordREGEX = Pattern.compile(
