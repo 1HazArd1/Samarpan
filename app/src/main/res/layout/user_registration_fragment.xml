@@ -87,7 +87,7 @@
                         android:id="@+id/registerPhone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="number"
+                        android:inputType="phone"
                         android:textCursorDrawable="@null"/>
 
                 </com.google.android.material.textfield.TextInputLayout>
