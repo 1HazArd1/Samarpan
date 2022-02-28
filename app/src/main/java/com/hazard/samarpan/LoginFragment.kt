@@ -1,6 +1,5 @@
 package com.hazard.samarpan
 
-import NgoSignup1Fragment
 import android.os.Bundle
 import android.text.TextUtils
 import android.view.LayoutInflater
@@ -53,10 +52,10 @@ class LoginFragment: Fragment() {
         btnLogin?.setOnClickListener {
             val mail=email?.text.toString().trim()
             val pass=password?.text.toString().trim()
-            if(TextUtils.isEmpty(mail)){
+            if(mail.isEmpty()){
                 email?.error = "Email cannot be empty"
             }
-            if(TextUtils.isEmpty(pass)){
+            if(pass.isEmpty()){
                 password?.error = "Password cannot be empty"
             }
             else{
@@ -66,6 +65,8 @@ class LoginFragment: Fragment() {
 
                             if (task.isSuccessful) {
                                 // logic for navigating to the dashboard
+                                /* here based on the logic of the type of user the respective activity would be loaded
+                                    i.e is the user ngo or donor */
                                 Toast.makeText(
                                     activity,
                                     "Logged in Successfully",

@@ -1,15 +1,15 @@
+package com.hazard.samarpan
+
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
-import com.hazard.samarpan.NgoSignup2Fragment
-import com.hazard.samarpan.R
 
 class NgoSignup1Fragment : Fragment() {
 
-    lateinit var nextBtn: Button
+    private lateinit var nextBtn: Button
 
     override fun onCreateView(
         inflater: LayoutInflater,
