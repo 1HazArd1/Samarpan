@@ -1,7 +1,7 @@
 package com.hazard.samarpan
 
+import android.content.Intent
 import android.os.Bundle
-import android.text.TextUtils
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -25,7 +25,7 @@ class LoginFragment: Fragment() {
 
     private lateinit var ngoSignUp: TextView
 
-    private lateinit var registerAuth: FirebaseAuth
+    private lateinit var loginAuth: FirebaseAuth
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         itemView =layoutInflater.inflate(R.layout.login_fragment,container,false)
@@ -37,7 +37,7 @@ class LoginFragment: Fragment() {
 
         ngoSignUp = itemView!!.findViewById(R.id.tv_login_registerasngo)
 
-        registerAuth= Firebase.auth
+        loginAuth= Firebase.auth
 
         ngoSignUp.setOnClickListener{
             activity?.supportFragmentManager?.beginTransaction()?.replace(R.id.fragment_container1, NgoSignup1Fragment())?.addToBackStack(null)?.commit()
@@ -60,7 +60,7 @@ class LoginFragment: Fragment() {
             }
             else{
                 try {
-                    registerAuth.signInWithEmailAndPassword(mail, pass)
+                    loginAuth.signInWithEmailAndPassword(mail, pass)
                         .addOnCompleteListener { task ->
 
                             if (task.isSuccessful) {
@@ -72,6 +72,12 @@ class LoginFragment: Fragment() {
                                     "Logged in Successfully",
                                     Toast.LENGTH_SHORT
                                 ).show()
+                                activity?.let{
+                                    val intent = Intent (it, Main2Activity::class.java)
+                                    it.startActivity(intent)
+                                }
+                                activity?.finish()
+
                             } else {
                                 Toast.makeText(
                                     activity,
@@ -88,6 +94,19 @@ class LoginFragment: Fragment() {
         }
 
         return itemView
+    }
+
+    override fun onStart() {
+        super.onStart()
+        // check if the user is signed in then don't open login or register page directly send to the required activity
+        val currentUser = loginAuth.currentUser
+        if (currentUser != null) {
+            // write logic to send to the main dashboard of the application
+            activity?.let{
+                val intent =Intent(it,Main2Activity::class.java)
+                startActivity(intent)
+            }
+        }
     }
     
 }
