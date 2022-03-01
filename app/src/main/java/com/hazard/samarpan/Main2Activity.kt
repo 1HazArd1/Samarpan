@@ -24,4 +24,5 @@ class Main2Activity : AppCompatActivity() {
             finish()
         }
     }
+
 }
