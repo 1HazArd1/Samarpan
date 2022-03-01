@@ -115,7 +115,7 @@ class UserRegisterFragment : Fragment() {
                                 ).show()
 
                                 //collecting the user data from the app with the help of the below method
-                                val documentReference :DocumentReference=db.collection("donors").document(
+                                val documentReference :DocumentReference=db.collection("users").document(
                                     user?.uid ?: ""
                                 )
                                 val donorInfo: MutableMap<String, Any> = HashMap()
