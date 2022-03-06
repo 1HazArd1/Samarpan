@@ -8,6 +8,7 @@
     <color name="theme_text_color_body"> #494F55</color>
     <color name="theme_text_color_bold">#333333</color>
     <color name="theme_transparent_button">#00000000</color>
+    <color name="profile_button_color">#EE9A40</color>
 
     <color name="ColorTextIcons">#b6FFFFFF</color>
 

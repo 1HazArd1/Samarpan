@@ -3,6 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Projects/diversion/Samarpan/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.21614583333333334" />
+        <entry key="..\:/Projects/diversion/Samarpan/app/src/main/res/drawable/ic_baseline_perm_identity_24.xml" value="0.21614583333333334" />
+        <entry key="..\:/Projects/diversion/Samarpan/app/src/main/res/drawable/ic_uploadimage.xml" value="0.21614583333333334" />
+        <entry key="..\:/Projects/diversion/Samarpan/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Projects/diversion/Samarpan/app/src/main/res/layout/activity_main2.xml" value="0.20416666666666666" />
+        <entry key="..\:/Projects/diversion/Samarpan/app/src/main/res/layout/clothing_item_dashboard.xml" value="0.2" />
+        <entry key="..\:/Projects/diversion/Samarpan/app/src/main/res/layout/dashboard_fragment.xml" value="0.2" />
+        <entry key="..\:/Projects/diversion/Samarpan/app/src/main/res/layout/fragment_dashboard.xml" value="0.20416666666666666" />
+        <entry key="..\:/Projects/diversion/Samarpan/app/src/main/res/layout/login_fragment.xml" value="0.20416666666666666" />
+        <entry key="..\:/Projects/diversion/Samarpan/app/src/main/res/layout/ngo_signup1_fragment.xml" value="0.25" />
+        <entry key="..\:/Projects/diversion/Samarpan/app/src/main/res/layout/ngo_signup2_fragment.xml" value="0.20416666666666666" />
+        <entry key="..\:/Samarpan/app/src/main/res/layout/dashboard_fragment.xml" value="0.1859375" />
         <entry key="..\:/Users/Sunny/AndroidStudioProjects/Samarpan/app/src/main/res/drawable/facebook_icon.xml" value="0.2203125" />
         <entry key="..\:/Users/Sunny/AndroidStudioProjects/Samarpan/app/src/main/res/drawable/google_icon.xml" value="0.2203125" />
         <entry key="..\:/Users/Sunny/AndroidStudioProjects/Samarpan/app/src/main/res/drawable/google_logo.xml" value="0.2203125" />
@@ -14,7 +26,6 @@
         <entry key="..\:/Users/Sunny/AndroidStudioProjects/Samarpan/app/src/main/res/font/roboto.xml" value="0.23958333333333334" />
         <entry key="..\:/Users/Sunny/AndroidStudioProjects/Samarpan/app/src/main/res/font/roboto_bold.xml" value="0.23958333333333334" />
         <entry key="..\:/Users/Sunny/AndroidStudioProjects/Samarpan/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/Sunny/AndroidStudioProjects/Samarpan/app/src/main/res/layout/activity_main2.xml" value="0.209375" />
         <entry key="..\:/Users/Sunny/AndroidStudioProjects/Samarpan/app/src/main/res/layout/dropdown_menu_popup_item.xml" value="0.209375" />
         <entry key="..\:/Users/Sunny/AndroidStudioProjects/Samarpan/app/src/main/res/layout/login_fragment.xml" value="0.209375" />
         <entry key="..\:/Users/Sunny/AndroidStudioProjects/Samarpan/app/src/main/res/layout/ngo_signup1_fragment.xml" value="0.25" />
