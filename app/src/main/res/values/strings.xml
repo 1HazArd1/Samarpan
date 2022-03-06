@@ -21,4 +21,10 @@
     <string name="get_started">Get started</string>
     <string name="ngosignup1_phone_number">Phone number</string>
     <string name="next">Next</string>
+    <string name="categories">Categories</string>
+    <string name="clothing">Clothing</string>
+    <string name="view_more">View more</string>
+    <string name="book_sharing_text">Now share your books with your friends</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
