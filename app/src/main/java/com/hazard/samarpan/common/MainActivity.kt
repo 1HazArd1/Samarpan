@@ -1,7 +1,8 @@
-package com.hazard.samarpan
+package com.hazard.samarpan.common
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.hazard.samarpan.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,7 +16,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun addFragment() {
-        val userSignInLayout=LoginFragment()
+        val userSignInLayout= LoginFragment()
         supportFragmentManager.beginTransaction().add(R.id.fragment_container1,userSignInLayout).commit()
     }
 }

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="theme_color">#f6c23f</color>
+    <color name="theme_color">#ffbf00</color>
     <color name="theme_color_light">#f6e592</color>
-    <color name="theme_button_color">#f6c23f</color>
+    <color name="theme_button_color">#ffbf00</color>
     <color name="theme_button_text">#f5f5f5</color>
+    <color name="theme_background">#f5f5f5</color>
     <color name="theme_text_color_heading">#1a1110</color>
     <color name="theme_text_color_body"> #494F55</color>
     <color name="theme_text_color_bold">#333333</color>
