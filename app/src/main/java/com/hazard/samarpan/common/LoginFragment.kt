@@ -1,4 +1,4 @@
-package com.hazard.samarpan
+package com.hazard.samarpan.common
 
 import android.content.Intent
 import android.os.Bundle
@@ -14,6 +14,9 @@ import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import com.hazard.samarpan.ngo.NgoSignup1Fragment
+import com.hazard.samarpan.R
+import com.hazard.samarpan.user.UserRegisterFragment
 
 
 class LoginFragment: Fragment() {
@@ -44,7 +47,7 @@ class LoginFragment: Fragment() {
         }
 
         userSignUp?.setOnClickListener {
-              val userRegistrationPage=UserRegisterFragment()
+              val userRegistrationPage= UserRegisterFragment()
               activity?.supportFragmentManager?.beginTransaction()?.replace(R.id.fragment_container1,userRegistrationPage)
                   ?.commit()
         }
@@ -103,7 +106,7 @@ class LoginFragment: Fragment() {
         if (currentUser != null) {
             // write logic to send to the main dashboard of the application
             activity?.let{
-                val intent =Intent(it,Main2Activity::class.java)
+                val intent =Intent(it, Main2Activity::class.java)
                 startActivity(intent)
             }
         }

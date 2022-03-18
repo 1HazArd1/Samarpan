@@ -1,10 +1,8 @@
-package com.hazard.samarpan
+package com.hazard.samarpan.user
 
-import android.app.Activity
 import android.content.ContentValues.TAG
 import android.content.Intent
 import android.os.Bundle
-import android.text.TextUtils
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -20,6 +18,9 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
+import com.hazard.samarpan.common.LoginFragment
+import com.hazard.samarpan.common.Main2Activity
+import com.hazard.samarpan.R
 import java.util.regex.Pattern
 
 class UserRegisterFragment : Fragment() {

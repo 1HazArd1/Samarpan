@@ -1,4 +1,4 @@
-package com.hazard.samarpan
+package com.hazard.samarpan.ngo
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
+import com.hazard.samarpan.R
 
 class NgoSignup1Fragment : Fragment() {
 
@@ -21,7 +22,8 @@ class NgoSignup1Fragment : Fragment() {
         nextBtn = v.findViewById(R.id.btn_ngosignup1_next)
         nextBtn.setOnClickListener {
             activity?.supportFragmentManager?.beginTransaction()
-                ?.replace(R.id.fragment_container1,
+                ?.replace(
+                    R.id.fragment_container1,
                     NgoSignup2Fragment()
                 )?.addToBackStack(null)?.commit()
         }

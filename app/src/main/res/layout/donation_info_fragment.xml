@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:background="@color/theme_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/righteous"
+            android:text="What have you got ?"
+            android:textColor="@color/theme_text_color_heading"
+            android:textSize="28dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/button_design"
+            android:text="Category"
+            android:textAllCaps="false"
+            android:textColor="@color/theme_button_text" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="What the item is?"
+            android:layout_marginTop="20dp"
+            app:hintTextColor="@color/theme_text_color_body">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textCursorDrawable="@null" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Description"
+            app:counterEnabled="true"
+            app:counterMaxLength="150"
+            app:hintTextColor="@color/theme_text_color_body">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registerAddress"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:inputType="textLongMessage"
+                android:textCursorDrawable="@null"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/button_design"
+            android:text="Upload Image"
+            android:textColor="@color/theme_button_text"
+            android:textAllCaps="false"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

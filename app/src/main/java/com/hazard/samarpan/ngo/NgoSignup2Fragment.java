@@ -1,4 +1,4 @@
-package com.hazard.samarpan;
+package com.hazard.samarpan.ngo;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,6 +10,8 @@ import android.widget.AutoCompleteTextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import com.hazard.samarpan.R;
 
 public class NgoSignup2Fragment extends Fragment {
 
