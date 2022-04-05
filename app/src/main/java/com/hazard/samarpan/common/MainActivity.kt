@@ -1,7 +1,8 @@
-package com.hazard.samarpan
+package com.hazard.samarpan.common
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.hazard.samarpan.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -11,10 +12,11 @@ class MainActivity : AppCompatActivity() {
         setTheme(R.style.Theme_Samarpan)
         setContentView(R.layout.activity_main)
         addFragment()
+
     }
 
     private fun addFragment() {
-        val userSignInLayout=UserLoginFragment()
-        supportFragmentManager.beginTransaction().add(R.id.loginFragment,userSignInLayout).commit()
+        val userSignInLayout= LoginFragment()
+        supportFragmentManager.beginTransaction().add(R.id.fragment_container1,userSignInLayout).commit()
     }
 }

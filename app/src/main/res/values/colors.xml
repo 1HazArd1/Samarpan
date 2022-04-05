@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="theme_color">#ffbf00</color>
+    <color name="theme_color_light">#f6e592</color>
+    <color name="theme_button_color">#ffbf00</color>
+    <color name="theme_button_text">#f5f5f5</color>
+    <color name="theme_background">#f5f5f5</color>
+    <color name="theme_text_color_heading">#1a1110</color>
+    <color name="theme_text_color_body"> #494F55</color>
+    <color name="theme_text_color_bold">#333333</color>
+    <color name="theme_transparent_button">#00000000</color>
+    <color name="profile_button_color">#EE9A40</color>
+
+    <color name="ColorTextIcons">#b6FFFFFF</color>
+
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>

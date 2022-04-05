@@ -1,4 +1,30 @@
 <resources>
     <string name="app_name">Samarpan</string>
+
+    <string name="tv_signIn_login">Sign In to Continue…</string>
+    <string name="et_email">Email</string>
+    <string name="et_password">Password</string>
+    <string name="btn_forgotPass_login">Forgot Password?</string>
+    <string name="btn_ngoRegister_login">Register as NGO</string>
+
     <string name="userLoginQuote">You would be the sunshine to someone\'s gray skies</string>
+    <string name="welcome_to_samarpan">Welcome to samarpan</string>
+    <string name="ngosignup_uploadimage">Upload Organization’s logo</string>
+    <string name="lets_us_know_you_better">Lets us know you better...</string>
+    <string name="upload">Upload</string>
+    <string name="fcra_document">FCRA Document</string>
+    <string name="annual_report">Annual Report</string>
+    <string name="registration_certificate">Registration Certificate</string>
+    <string name="pan_card">Pan Card</string>
+    <string name="upload_below_documents">Upload below documents</string>
+    <string name="oragnization_type">Oragnization type</string>
+    <string name="get_started">Get started</string>
+    <string name="ngosignup1_phone_number">Phone number</string>
+    <string name="next">Next</string>
+    <string name="categories">Categories</string>
+    <string name="clothing">Clothing</string>
+    <string name="view_more">View more</string>
+    <string name="book_sharing_text">Now share your books with your friends</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

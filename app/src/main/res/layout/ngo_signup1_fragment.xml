@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:background="@color/theme_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/righteous"
+            android:text="@string/welcome_to_samarpan"
+            android:textColor="@color/theme_text_color_heading"
+            android:textSize="28sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:id="@+id/img_ngosignup_uploadimage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_uploadimage" />
+
+            <TextView
+                android:id="@+id/tv_ngosignup_uploadimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/img_ngosignup_uploadimage"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="90dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/ngosignup_uploadimage"
+                android:textColor="@color/theme_text_color_body"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ngosignup_name_container"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Organization name"
+            app:hintTextColor="@color/theme_text_color_body">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_ngosignup_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textShortMessage"
+                android:textCursorDrawable="@null"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ngosignup_mail_container"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Official mail address"
+            app:hintTextColor="@color/theme_text_color_body">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_ngosignup_mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textCursorDrawable="@null"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ngosignup_phone_container"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="3"
+                android:hint="@string/ngosignup1_phone_number"
+                app:hintTextColor="@color/theme_text_color_body">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_ngosignup_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textCursorDrawable="@null"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:text="Verify" />
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ngosignup_address_container"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Office address"
+            app:counterEnabled="true"
+            app:counterMaxLength="60"
+            app:hintTextColor="@color/theme_text_color_body">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_ngosignup_address"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:inputType="textLongMessage"
+                android:textCursorDrawable="@null"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ngosignup_pincode_container"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Pincode"
+            app:hintTextColor="@color/theme_text_color_body"
+            app:counterEnabled="true"
+            app:counterMaxLength="6">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_ngosignup_pincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textCursorDrawable="@null"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ngosignup_password_container"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Password"
+            app:endIconMode="password_toggle"
+            app:hintTextColor="@color/theme_text_color_body">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_ngosignup_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textCursorDrawable="@null"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ngosignup_confirmpassword_container"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Confirm password"
+            app:endIconMode="password_toggle"
+            app:hintTextColor="@color/theme_text_color_body">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_ngosignup_confirmpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textCursorDrawable="@null"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_ngosignup1_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:enabled="true"
+            android:paddingLeft="50dp"
+            android:paddingTop="15dp"
+            android:paddingRight="50dp"
+            android:paddingBottom="15dp"
+            android:textAllCaps="false"
+            android:text="@string/next" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
