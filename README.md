@@ -30,8 +30,6 @@ As usual, you can get started by cloning the project to your local machine:
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 
 
-
-
 ## 📁 Documentation
 
 **The section provides with the proper documentation and ideas to be implemented inside the application**  
