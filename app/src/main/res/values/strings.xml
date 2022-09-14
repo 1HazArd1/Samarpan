@@ -17,7 +17,7 @@
     <string name="registration_certificate">Registration Certificate</string>
     <string name="pan_card">Pan Card</string>
     <string name="upload_below_documents">Upload below documents</string>
-    <string name="oragnization_type">Oragnization type</string>
+    <string name="organization_type">Oragnization type</string>
     <string name="get_started">Get started</string>
     <string name="ngosignup1_phone_number">Phone number</string>
     <string name="next">Next</string>
@@ -27,4 +27,15 @@
     <string name="book_sharing_text">Now share your books with your friends</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!-- Organisation types for ngo_signup2_fragment -->
+    <string-array name="organisation_type">
+        <item>Trusts (Charitable Trusts)</item>
+        <item>Societies</item>
+        <item>Section 8 Company</item>
+        <item>Private Non Profit Company</item>
+        <item>Others</item>
+    </string-array>
+
 </resources>

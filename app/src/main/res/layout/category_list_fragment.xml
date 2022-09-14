@@ -4,12 +4,46 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:contentDescription="category"
-    android:background="@color/theme_background"
-    >
+    android:background="@color/theme_background">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="20dp"
+                android:background="#EA4C46">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clothing"
+                    android:textSize="30sp"
+                    android:textColor="@color/theme_text_color_heading"
+                    android:fontFamily="@font/roboto_medium"
+                    android:padding="25dp"/>
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_baseline_android_24"
+                android:layout_marginTop="-40dp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:background="#C46200">
+
+        </RelativeLayout>
     </LinearLayout>
 </ScrollView>
