@@ -77,6 +77,8 @@ class LoginFragment: Fragment() {
                                 ).show()
                                 activity?.let{
                                     val intent = Intent (it, Main2Activity::class.java)
+                                    // here send the data of the received user type from the database and according to the
+                                    //0 or 1 populate the respective fragment in the activity
                                     it.startActivity(intent)
                                 }
                                 activity?.finish()

@@ -180,6 +180,7 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/btnNgoRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -190,6 +191,14 @@
             android:textAllCaps="false"
             android:textColor="@color/theme_button_text"
             android:text="@string/get_started" />
+
+        <TextView
+            android:id="@+id/tv_Sample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sample"
+            android:layout_marginTop="10dp"
+            />
 
     </LinearLayout>
 

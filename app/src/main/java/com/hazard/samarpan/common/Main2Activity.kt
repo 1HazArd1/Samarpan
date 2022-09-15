@@ -25,6 +25,7 @@ class Main2Activity : AppCompatActivity() {
      }   */
 
     }
+    //create one more function that will be responsible to open the ngo dashboard
     private fun addFragment() {
         val dashboard= UserDashboardFragment()
         supportFragmentManager.beginTransaction().add(R.id.fragment_container2,dashboard).commit()
