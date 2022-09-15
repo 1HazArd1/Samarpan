@@ -24,7 +24,7 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp">
+            android:layout_marginTop="40dp">
 
             <ImageView
                 android:id="@+id/img_ngosignup_uploadimage"
@@ -51,7 +51,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:hint="Organization name"
             app:hintTextColor="@color/theme_text_color_body">
 
@@ -92,7 +92,7 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="7dp"
                 android:layout_marginBottom="10dp"
                 android:layout_weight="3"
                 android:hint="@string/ngosignup1_phone_number"
@@ -111,7 +111,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="7dp"
                 android:layout_marginBottom="6dp"
                 android:layout_weight="1"
                 android:textAllCaps="false"
@@ -144,7 +144,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="7dp"
             android:hint="Pincode"
             app:hintTextColor="@color/theme_text_color_body"
             app:counterEnabled="true"
@@ -204,11 +204,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="25dp"
             android:layout_marginBottom="25dp"
-            android:enabled="true"
-            android:paddingLeft="50dp"
-            android:paddingTop="15dp"
-            android:paddingRight="50dp"
-            android:paddingBottom="15dp"
+            android:background="@drawable/button_design"
             android:textAllCaps="false"
             android:text="@string/next" />
 

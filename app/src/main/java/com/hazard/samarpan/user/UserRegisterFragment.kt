@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.auth.FirebaseAuth
@@ -101,6 +102,7 @@ class UserRegisterFragment : Fragment() {
                 password?.error = "Password format is invalid"
             } else {
                 //user registration
+                btnRegister?.isEnabled=true
                 try {
 
                     registerAuth.createUserWithEmailAndPassword(mail, pass)
@@ -177,5 +179,9 @@ class UserRegisterFragment : Fragment() {
                     "$"
         )
         return passwordREGEX.matcher(password).matches()
+    }
+    private fun markButtonDisable(b:Button){
+        b.isEnabled =false
+        b.setBackgroundColor(resources.getColor(R.color.theme_button_disabled))
     }
 }
