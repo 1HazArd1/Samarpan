@@ -8,6 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import androidx.fragment.app.Fragment
+import com.google.android.material.textfield.TextInputEditText
+import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
@@ -20,14 +22,18 @@ class NgoSignup2Fragment : Fragment(){
 
     private var v : View?=null
     private var btnNgoRegister: Button?=null
-    private var tvSample :TextView?=null
+    private var tilCategoryOthers:TextInputLayout?=null
+    private var etCategoryOthers:TextInputEditText?=null
+
 
     private var orgName:String =""
     private var orgMail:String =""
     private var orgPhone:String =""
     private var officeAdd:String =""
     private var orgPin:String =""
-    private var pass:String =""
+    private var orgPass:String =""
+    private var category:String=""
+
     private lateinit var registerAuth: FirebaseAuth
 
 
@@ -39,31 +45,39 @@ class NgoSignup2Fragment : Fragment(){
         v = layoutInflater.inflate(R.layout.ngo_signup2_fragment,container,false)
 
         btnNgoRegister=v?.findViewById(R.id.btnNgoRegister)
-        tvSample=v?.findViewById(R.id.tv_Sample)
+        tilCategoryOthers=v?.findViewById(R.id.til_category_others)
+        etCategoryOthers=v?.findViewById(R.id.et_category_others)
 
         val organisationTypes = resources.getStringArray(R.array.organisation_type)
         val arrayAdapter = ArrayAdapter(requireContext(),R.layout.dropdown_item,organisationTypes)
         val autoCompleteTV= v?.findViewById<AutoCompleteTextView>(R.id.ngosignup_select_orgtype_items)
         autoCompleteTV?.setAdapter(arrayAdapter)
 
-
+        category=autoCompleteTV?.text.toString().trim()
 
         registerAuth= Firebase.auth
 
-        orgName=arguments?.getString("Name").toString()
-        orgMail= arguments?.getString("Mail").toString()
-        orgPhone=arguments?.getString("Phone").toString()
-        officeAdd=arguments?.getString("Address").toString()
-        orgPin=arguments?.getString("PinCode").toString()
-        pass=arguments?.getString("Password").toString()
+        orgName=arguments?.getString("Name").toString().trim()
+        orgMail= arguments?.getString("Mail").toString().trim()
+        orgPhone=arguments?.getString("Phone").toString().trim()
+        officeAdd=arguments?.getString("Address").toString().trim()
+        orgPin=arguments?.getString("PinCode").toString().trim()
+        orgPass=arguments?.getString("Password").toString().trim()
 
         btnNgoRegister?.setOnClickListener {
+            if(category == "Others"){
+                //get the category from the user of the type he is from other than the list
+                btnNgoRegister?.isEnabled=false
+                tilCategoryOthers?.visibility=View.VISIBLE
+                category=etCategoryOthers?.text.toString()
+                btnNgoRegister?.isEnabled=true
+            }
             val db = FirebaseFirestore.getInstance()
             try{
-                registerAuth.createUserWithEmailAndPassword(orgMail,pass)
+                registerAuth.createUserWithEmailAndPassword(orgMail,orgPass)
                     .addOnCompleteListener{ task->
                         if(task.isSuccessful){
-                         val ngo: FirebaseUser? =registerAuth.currentUser
+                            val ngo: FirebaseUser? =registerAuth.currentUser
                             Toast.makeText(
                                 activity,
                                 "Thank You! for choosing us",
@@ -73,12 +87,12 @@ class NgoSignup2Fragment : Fragment(){
                                 ngo?.uid ?: ""
                          )
                             val ngoInfo :MutableMap<String,Any> = HashMap()
-                            ngoInfo["OrgName"]= orgName
-                            ngoInfo["OrgMail"]= orgMail
-                            ngoInfo["OrgPhone"]=orgPhone
-                            ngoInfo["OfficeAdd"]=officeAdd
-                            ngoInfo["OrgPinCode"]=orgPin
-                            ngoInfo["isDonor"]=0
+                            ngoInfo["Full Name"]= orgName
+                            ngoInfo["Email"]= orgMail
+                            ngoInfo["PhoneNumber"]=orgPhone
+                            ngoInfo["Address"]=officeAdd
+                            ngoInfo["Pin Code"]=orgPin
+                            ngoInfo["isDonor"]="0"
                             // add the value of the org type from the dropdown and upload document work
                             documentReference.set(ngoInfo).addOnSuccessListener {
                                 Log.d(ContentValues.TAG, "User data for $orgName was collected successfully ")

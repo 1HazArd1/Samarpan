@@ -52,7 +52,7 @@ class NgoSignup1Fragment : Fragment() {
             val orgPhone = phone?.text.toString().trim()
             val officeAdd = add?.text.toString().trim()
             val orgPinCode = pinCode?.text.toString().trim()
-            val pass = password?.text.toString().trim()
+            val orgPass = password?.text.toString().trim()
             val confirmPass=confirmPassword?.text.toString().trim()
 
 
@@ -76,7 +76,7 @@ class NgoSignup1Fragment : Fragment() {
                 name?.error = "Name cannot be empty"
                 markButtonDisable(nextBtn)
             }
-            if (pass.isEmpty()){
+            if (orgPass.isEmpty()){
                 password?.error = "Password cannot be empty"
                 markButtonDisable(nextBtn)
             }
@@ -84,15 +84,15 @@ class NgoSignup1Fragment : Fragment() {
                 mail?.error = "Invalid email"
                 markButtonDisable(nextBtn)
             }
-            if (!(isValidPassword(pass))) {
+            if (!(isValidPassword(orgPass))) {
                 password?.error = "Password format is invalid"
                 markButtonDisable(nextBtn)
             }
-            if(pass != confirmPass){
+            if(orgPass != confirmPass){
                 confirmPassword?.error = "Passwords doesn't match"
                 markButtonDisable(nextBtn)
             }else{
-                communicator.passDataCom(orgName,orgMail,orgPhone,officeAdd,orgPinCode,pass)
+                communicator.passDataCom(orgName,orgMail,orgPhone,officeAdd,orgPinCode,orgPass)
                 activity?.supportFragmentManager?.beginTransaction()
                     ?.replace(
                         R.id.fragment_container1,

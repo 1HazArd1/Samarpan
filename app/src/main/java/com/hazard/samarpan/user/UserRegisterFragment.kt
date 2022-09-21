@@ -128,7 +128,7 @@ class UserRegisterFragment : Fragment() {
                                 donorInfo["Address"] = donorAddress
                                 donorInfo["Pin Code"] = donorPinCode
                                 //specify if the user is donor
-                                donorInfo["isDonor"] = 1  // in case of NGO give this value 0
+                                donorInfo["isDonor"] = "1"  // in case of NGO give this value 0
 
                                 documentReference.set(donorInfo).addOnSuccessListener {
                                     Log.d(TAG, "User data for $donorName was collected successfully ")
