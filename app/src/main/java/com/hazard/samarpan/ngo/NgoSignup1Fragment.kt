@@ -93,15 +93,8 @@ class NgoSignup1Fragment : Fragment() {
                 markButtonDisable(nextBtn)
             }else{
                 communicator.passDataCom(orgName,orgMail,orgPhone,officeAdd,orgPinCode,orgPass)
-                activity?.supportFragmentManager?.beginTransaction()
-                    ?.replace(
-                        R.id.fragment_container1,
-                        NgoSignup2Fragment()
-                    )?.addToBackStack(null)?.commit()
+                //this method already have the logic to navigate to sign up page 2
             }
-
-            //this opens up the sign up 2 page
-
         }
 
         return v

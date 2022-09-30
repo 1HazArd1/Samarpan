@@ -41,6 +41,6 @@ class MainActivity : AppCompatActivity(),Communicator {
         val transaction=this.supportFragmentManager.beginTransaction()
         val ngoSignUp2 = NgoSignup2Fragment()
         ngoSignUp2.arguments = bundle
-        transaction.commit()
+        transaction.replace(R.id.fragment_container1,ngoSignUp2).addToBackStack(null).commit()
     }
 }
