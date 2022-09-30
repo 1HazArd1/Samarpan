@@ -6,7 +6,7 @@ import com.hazard.samarpan.R
 import com.hazard.samarpan.ngo.Communicator
 import com.hazard.samarpan.ngo.NgoSignup2Fragment
 
-class MainActivity : AppCompatActivity(),Communicator {
+class MainActivity : AppCompatActivity(), Communicator {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         /*This part of the code is used to set the default theme as the theme was set to the splash screen before setting the main activity layout
@@ -18,8 +18,9 @@ class MainActivity : AppCompatActivity(),Communicator {
     }
 
     private fun addFragment() {
-        val userSignInLayout= LoginFragment()
-        supportFragmentManager.beginTransaction().add(R.id.fragment_container1,userSignInLayout).commit()
+        val userSignInLayout = LoginFragment()
+        supportFragmentManager.beginTransaction().add(R.id.fragment_container1, userSignInLayout)
+            .commit()
     }
 
     override fun passDataCom(
@@ -30,17 +31,17 @@ class MainActivity : AppCompatActivity(),Communicator {
         orgPin: String,
         orgPass: String
     ) {
-        val bundle=Bundle()
-        bundle.putString("Name",orgName)
-        bundle.putString("Mail",orgMail)
-        bundle.putString("Phone",orgPhone)
-        bundle.putString("Address",officeAdd)
-        bundle.putString("PinCode",orgPin)
-        bundle.putString("Password",orgPass)
+        val bundle = Bundle()
+        bundle.putString("Name", orgName)
+        bundle.putString("Mail", orgMail)
+        bundle.putString("Phone", orgPhone)
+        bundle.putString("Address", officeAdd)
+        bundle.putString("PinCode", orgPin)
+        bundle.putString("Password", orgPass)
 
-        val transaction=this.supportFragmentManager.beginTransaction()
+        val transaction = this.supportFragmentManager.beginTransaction()
         val ngoSignUp2 = NgoSignup2Fragment()
         ngoSignUp2.arguments = bundle
-        transaction.replace(R.id.fragment_container1,ngoSignUp2).addToBackStack(null).commit()
+        transaction.replace(R.id.fragment_container1, ngoSignUp2).addToBackStack(null).commit()
     }
 }

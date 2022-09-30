@@ -18,22 +18,22 @@ import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
 import com.hazard.samarpan.R
 
-class NgoSignup2Fragment : Fragment(){
+class NgoSignup2Fragment : Fragment() {
 
-    private var v : View?=null
-    private var btnNgoRegister: Button?=null
-    private var tilCategoryOthers:TextInputLayout?=null
-    private var tilSelectOrgType:TextInputLayout?=null
-    private var etCategoryOthers:TextInputEditText?=null
+    private var v: View? = null
+    private var btnNgoRegister: Button? = null
+    private var tilCategoryOthers: TextInputLayout? = null
+    private var tilSelectOrgType: TextInputLayout? = null
+    private var etCategoryOthers: TextInputEditText? = null
 
 
-    private var orgName:String? =""
-    private var orgMail:String? =""
-    private var orgPhone:String? =""
-    private var officeAdd:String? =""
-    private var orgPin:String? =""
-    private var orgPass:String? =""
-    private var category:String? =""
+    private var orgName: String? = ""
+    private var orgMail: String? = ""
+    private var orgPhone: String? = ""
+    private var officeAdd: String? = ""
+    private var orgPin: String? = ""
+    private var orgPass: String? = ""
+    private var category: String? = ""
 
     private lateinit var registerAuth: FirebaseAuth
 
@@ -43,44 +43,45 @@ class NgoSignup2Fragment : Fragment(){
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        v = layoutInflater.inflate(R.layout.ngo_signup2_fragment,container,false)
+        v = layoutInflater.inflate(R.layout.ngo_signup2_fragment, container, false)
 
-        btnNgoRegister=v?.findViewById(R.id.btnNgoRegister)
-        tilCategoryOthers=v?.findViewById(R.id.til_category_others)
-        etCategoryOthers=v?.findViewById(R.id.et_category_others)
+        btnNgoRegister = v?.findViewById(R.id.btnNgoRegister)
+        tilCategoryOthers = v?.findViewById(R.id.til_category_others)
+        etCategoryOthers = v?.findViewById(R.id.et_category_others)
 
 
-        tilSelectOrgType=v?.findViewById(R.id.ngosignup_select_orgtype)
+        tilSelectOrgType = v?.findViewById(R.id.ngosignup_select_orgtype)
 
         val organisationTypes = resources.getStringArray(R.array.organisation_type)
-        val arrayAdapter = ArrayAdapter(requireContext(),R.layout.dropdown_item,organisationTypes)
-        val autoCompleteTV= v?.findViewById<AutoCompleteTextView>(R.id.ngosignup_select_orgtype_items)
+        val arrayAdapter = ArrayAdapter(requireContext(), R.layout.dropdown_item, organisationTypes)
+        val autoCompleteTV =
+            v?.findViewById<AutoCompleteTextView>(R.id.ngosignup_select_orgtype_items)
         autoCompleteTV?.setAdapter(arrayAdapter)
 
 
-        registerAuth= Firebase.auth
+        registerAuth = Firebase.auth
 
-        orgName=arguments?.getString("Name").toString().trim()
-        orgMail= arguments?.getString("Mail").toString().trim()
-        orgPhone=arguments?.getString("Phone").toString().trim()
-        officeAdd=arguments?.getString("Address").toString().trim()
-        orgPin=arguments?.getString("PinCode").toString().trim()
-        orgPass=arguments?.getString("Password").toString().trim()
+        orgName = arguments?.getString("Name").toString().trim()
+        orgMail = arguments?.getString("Mail").toString().trim()
+        orgPhone = arguments?.getString("Phone").toString().trim()
+        officeAdd = arguments?.getString("Address").toString().trim()
+        orgPin = arguments?.getString("PinCode").toString().trim()
+        orgPass = arguments?.getString("Password").toString().trim()
 
-            autoCompleteTV?.setOnClickListener {
-                    category = autoCompleteTV.text.toString()
-                    if (category != "") {
-                        if (category == "Others") {
-                            tilCategoryOthers?.visibility = View.VISIBLE
-                            etCategoryOthers?.setOnClickListener {
-                                category = etCategoryOthers?.text.toString()
-                            }
-                        } else {
-                            category = autoCompleteTV.text.toString().trim()
-                            tilCategoryOthers?.visibility = View.GONE
-                        }
+        autoCompleteTV?.setOnClickListener {
+            category = autoCompleteTV.text.toString()
+            if (category != "") {
+                if (category == "Others") {
+                    tilCategoryOthers?.visibility = View.VISIBLE
+                    etCategoryOthers?.setOnClickListener {
+                        category = etCategoryOthers?.text.toString()
                     }
+                } else {
+                    category = autoCompleteTV.text.toString().trim()
+                    tilCategoryOthers?.visibility = View.GONE
                 }
+            }
+        }
 
 //        if(category == "Others"){
 //            //get the category from the user of the type he is from other than the list
@@ -92,45 +93,48 @@ class NgoSignup2Fragment : Fragment(){
 
         btnNgoRegister?.setOnClickListener {
             val db = FirebaseFirestore.getInstance()
-            try{
-                registerAuth.createUserWithEmailAndPassword(orgMail!!,orgPass!!)
-                    .addOnCompleteListener{ task->
-                        if(task.isSuccessful){
-                            val ngo: FirebaseUser? =registerAuth.currentUser
+            try {
+                registerAuth.createUserWithEmailAndPassword(orgMail!!, orgPass!!)
+                    .addOnCompleteListener { task ->
+                        if (task.isSuccessful) {
+                            val ngo: FirebaseUser? = registerAuth.currentUser
                             Toast.makeText(
                                 activity,
                                 "Thank You! for choosing us",
                                 Toast.LENGTH_SHORT
-                             ).show()
-                            val documentReference : DocumentReference =db.collection("users").document(
-                                ngo?.uid ?: ""
-                         )
-                            val ngoInfo :MutableMap<String,Any> = HashMap()
-                            ngoInfo["Full Name"]= orgName!!
-                            ngoInfo["Email"]= orgMail!!
-                            ngoInfo["PhoneNumber"]=orgPhone!!
-                            ngoInfo["Address"]=officeAdd!!
-                            ngoInfo["Pin Code"]=orgPin!!
-                            ngoInfo["isDonor"]="0"
+                            ).show()
+                            val documentReference: DocumentReference =
+                                db.collection("users").document(
+                                    ngo?.uid ?: ""
+                                )
+                            val ngoInfo: MutableMap<String, Any> = HashMap()
+                            ngoInfo["Full Name"] = orgName!!
+                            ngoInfo["Email"] = orgMail!!
+                            ngoInfo["PhoneNumber"] = orgPhone!!
+                            ngoInfo["Address"] = officeAdd!!
+                            ngoInfo["Pin Code"] = orgPin!!
+                            ngoInfo["isDonor"] = "0"
 
                             // add the value of the org type from the dropdown and upload document
                             documentReference.set(ngoInfo).addOnSuccessListener {
-                                Log.d(ContentValues.TAG, "User data for $orgName was collected successfully ")
-                            }.addOnFailureListener{ e ->
+                                Log.d(
+                                    ContentValues.TAG,
+                                    "User data for $orgName was collected successfully "
+                                )
+                            }.addOnFailureListener { e ->
                                 Log.w(ContentValues.TAG, "Error adding data", e)
                             }
-                    }else{
+                        } else {
                             Toast.makeText(
                                 activity,
                                 task.exception!!.message.toString(),
                                 Toast.LENGTH_SHORT
                             ).show()
                         }
-                }
-        }
-        catch(e :Exception){
-            Toast.makeText(context, "Fields cannot be empty $e", Toast.LENGTH_SHORT).show()
-        }
+                    }
+            } catch (e: Exception) {
+                Toast.makeText(context, "Fields cannot be empty $e", Toast.LENGTH_SHORT).show()
+            }
         }
         return v
     }
