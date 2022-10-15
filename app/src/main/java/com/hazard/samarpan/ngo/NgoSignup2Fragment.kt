@@ -33,6 +33,7 @@ class NgoSignup2Fragment : Fragment() {
     private var officeAdd: String? = ""
     private var orgPin: String? = ""
     private var orgPass: String? = ""
+
     private var category: String? = ""
 
     private lateinit var registerAuth: FirebaseAuth
@@ -58,7 +59,6 @@ class NgoSignup2Fragment : Fragment() {
             v?.findViewById<AutoCompleteTextView>(R.id.ngosignup_select_orgtype_items)
         autoCompleteTV?.setAdapter(arrayAdapter)
 
-
         registerAuth = Firebase.auth
 
         orgName = arguments?.getString("Name").toString().trim()
@@ -70,16 +70,14 @@ class NgoSignup2Fragment : Fragment() {
 
         autoCompleteTV?.setOnClickListener {
             category = autoCompleteTV.text.toString()
-            if (category != "") {
-                if (category == "Others") {
-                    tilCategoryOthers?.visibility = View.VISIBLE
-                    etCategoryOthers?.setOnClickListener {
-                        category = etCategoryOthers?.text.toString()
-                    }
-                } else {
-                    category = autoCompleteTV.text.toString().trim()
-                    tilCategoryOthers?.visibility = View.GONE
+            if (category == "Others") {
+                tilCategoryOthers?.visibility = View.VISIBLE
+                etCategoryOthers?.setOnClickListener {
+                    category = etCategoryOthers?.text.toString()
                 }
+            } else {
+                tilCategoryOthers?.visibility = View.GONE
+                category = autoCompleteTV.text.toString().trim()
             }
         }
 
@@ -113,6 +111,7 @@ class NgoSignup2Fragment : Fragment() {
                             ngoInfo["PhoneNumber"] = orgPhone!!
                             ngoInfo["Address"] = officeAdd!!
                             ngoInfo["Pin Code"] = orgPin!!
+                            ngoInfo["Category"] = category!!
                             ngoInfo["isDonor"] = "0"
 
                             // add the value of the org type from the dropdown and upload document
