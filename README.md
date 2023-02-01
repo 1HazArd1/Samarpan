@@ -9,7 +9,7 @@
 **Samarpan is a charity-based application that aims in bridging the gap between the philanthropic individuals who wish to bring a significant change in the society and the NGOs,uplifting and improving the lifestyle of the underprivilaged.**
 
 
-## 📃 Installation
+## 📃 Installation [Apk](https://github.com/1HazArd1/Samarpan/releases)
 **Clone the Repository**
 
 As usual, you can get started by cloning the project to your local machine:
