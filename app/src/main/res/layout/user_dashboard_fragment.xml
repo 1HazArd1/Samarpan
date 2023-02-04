@@ -43,7 +43,7 @@
                     android:backgroundTint="@color/theme_transparent_button"
                     android:contentDescription="Profile"
                     android:padding="15dp"
-                    android:src="@drawable/ic_baseline_account_circle_24"
+                    android:src="@drawable/profile_ico"
                     app:tint="@color/profile_button_color" />
             </RelativeLayout>
 

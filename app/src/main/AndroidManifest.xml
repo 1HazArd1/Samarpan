@@ -11,8 +11,7 @@
         android:theme="@style/Theme.Samarpan">
         <activity
             android:name=".common.Main2Activity"
-            android:exported="false" />
-        <!-- android:theme="@style/splashScreenTheme" -->
+            android:exported="false" /> <!-- android:theme="@style/splashScreenTheme" -->
         <!-- this is the logic for the splash screen place it inside the activity tag -->
         <activity
             android:name=".common.MainActivity"
@@ -24,7 +23,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".user.UserProfileActivity">
 
+        </activity>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

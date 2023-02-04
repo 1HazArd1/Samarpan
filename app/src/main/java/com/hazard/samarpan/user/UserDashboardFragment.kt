@@ -45,10 +45,8 @@ class UserDashboardFragment : Fragment() {
         clothRecycler.adapter = ClothAdapter(clothList)
 
         btnLogout?.setOnClickListener{
-            Firebase.auth.signOut()
-            val intent= Intent(context, MainActivity::class.java)
+            val intent = Intent(context,UserProfileActivity::class.java)
             startActivity(intent)
-            activity?.finish()
         }
 
         donate?.setOnClickListener {
