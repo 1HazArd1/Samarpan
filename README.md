@@ -15,7 +15,7 @@
 As usual, you can get started by cloning the project to your local machine:
 
 ```bash
-  https://github.com/Diversion2k22/Samarpan.git
+  https://github.com/1HazArd1/Samarpan.git
 ```
     
 ## 🧑‍💻 Tech Stack
